@@ -1,6 +1,6 @@
 [  
     {  
-        "keys": ["super+l"], "command": "sterm",  
+        "keys": ["super+k"], "command": "sterm",  
         "keys": ["super+shift+l"], "command": "stermdo"  
     }  
 ]
