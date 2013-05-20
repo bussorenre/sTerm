@@ -31,7 +31,7 @@ class StermCommand(sublime_plugin.TextCommand):
         if(self.pos > self.view.size()):
             for i in range(self.pos -self.view.size()):
                 self.pos -= 1
-                print "\b"
+                self.process.stdin.write("\b")
 
         while (self.pos < self.view.size()):
             c = self.view.substr(self.pos)
