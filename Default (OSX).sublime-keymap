@@ -1,7 +1,5 @@
 [  
-    {  
-        "keys": ["super+k"], "command": "sterm",  
-        "keys": ["super+shift+l"], "command": "stermdo"  
-    }  
+    { "keys": ["super+l"], "command": "sterm" },  
+    { "keys": ["super+shift+l"], "command": "stermdo" }  
 ]
 
