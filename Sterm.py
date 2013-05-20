@@ -52,6 +52,7 @@ class StermCommand(sublime_plugin.TextCommand):
             else: # got line
                 self.view.insert(self.edit, self.view.size(), line)
                 self.pos = self.view.size()
+                self.view.show(self.pos)
         c = None
         while(True):
             try:  line = self.qe.get_nowait() # or q.get(timeout=.1)
@@ -63,6 +64,7 @@ class StermCommand(sublime_plugin.TextCommand):
                 if(self.inputflag == False):
                     self.view.insert(self.edit, self.view.size(), line)
                     self.pos = self.view.size()
+                    self.view.show(self.pos)
                     c = line
         sublime.set_timeout(self.updateview,100)
 
